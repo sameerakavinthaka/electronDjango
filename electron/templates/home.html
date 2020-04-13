@@ -1,0 +1,376 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>World's Best Electronic Website</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'electron/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'electron/css/modern-business.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Most Trusted Electronic Deals</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Privacy Policy</a>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Portfolio
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
+              <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
+              <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
+              <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
+              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
+              <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
+              <a class="dropdown-item" href="blog-post.html">Blog Post</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Other Pages
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="full-width.html">Full Width Page</a>
+              <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
+              <a class="dropdown-item" href="faq.html">FAQ</a>
+              <a class="dropdown-item" href="404.html">404</a>
+              <a class="dropdown-item" href="pricing.html">Pricing Table</a>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('{% static 'electron/images/p6.jpg' %}')">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h3>First Slide</h3>
+            <p>This is a description for the first slide.</p>
+          </div> -->
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('{% static 'electron/images/p4.jpg' %}')">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h3>Second Slide</h3>
+            <p>This is a description for the second slide.</p>
+          </div> -->
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('{% static 'electron/images/p3.jpg' %}')">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h3>Third Slide</h3>
+            <p>This is a description for the third slide.</p>
+          </div> -->
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+   
+
+    <!-- Marketing Icons Section -->
+    <!-- <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">Card Title</h4>
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">Card Title</h4>
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">Card Title</h4>
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <!-- /.row -->
+
+    <!-- Portfolio Section -->
+    <h1 class="my-4">Welcome to World's Best Electronic Site</h1>
+
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://amzn.to/2K0LHc6"><img class="card-img-top" src="{% static 'electron/images/t1.jpg' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://amzn.to/2K0LHc6">New Apple MacBook Air (13-inch, 8GB RAM, 512GB SSD Storage) - Silver</a>
+            </h4>
+            <p class="card-text">Stunning 13.3-inch Retina display with True Tone technology
+              Backlit Magic Keyboard and Touch ID
+              Tenth-generation Intel Core i5 processor
+              Intel Iris Plus Graphics
+              Fast SSD storage
+              8GB of memory
+              Stereo speakers with wider stereo sound
+              Two Thunderbolt 3 (USB-C) ports
+              Up to 11 hours of battery life
+              Force Touch trackpad</p> 
+              <a href = "https://amzn.to/2K0LHc6" class="btn btn-secondary">$1,283.46</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://amzn.to/2wyxsbb"><img class="card-img-top" src="{% static 'electron/images/t2.jpg' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://amzn.to/2wyxsbb">Dell XPS 15 laptop 15.6", 4K UHD InfinityEdge Touch, 9th Gen Intel Core i7-9750H, NVIDIA GeForce GTX 1650 4GB GDDR5, 1TB SSD storage, 16GB RAM, XPS7590-7565SLV-PUS</a>
+            </h4>
+            <p class="card-text">15. 6" 4K UHD (3840 x 2160) InfinityEdge anti-reflective touch IPS 100% a do be RGB 500-nits Display
+            9th Generation Intel Core i7-9750h (12MB Cache, up to 4. 5 GHz, 6 Cores)
+            16GB DDR4-2666MHz, 2x8G
+            1TB PCIe SSD
+            <!-- Nvidia GeForce GTX 1650 4GB GDDR5
+            6-Cell 97Whr integrated
+            Backlit English keyboard with fingerprint reader.Bluetooth 5.0
+            Sd card reader, Thunderbolt, USB 3. 0
+            System Ram Type: Ddr4 Sdram -->
+            </p>
+
+            <a href = "https://amzn.to/2wyxsbb" class="btn btn-secondary">$1,999.98</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://amzn.to/34vr29i"><img class="card-img-top" src="{% static 'electron/images/t3.jpg' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://amzn.to/34vr29i">New Apple MacBook Air (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray</a>
+            </h4>
+            <p class="card-text">Stunning 13.3-inch Retina display with True Tone technology
+            Backlit Magic Keyboard and Touch ID
+            Tenth-generation Intel Core i3 processor
+            Intel Iris Plus Graphics
+            Fast SSD storage
+            8GB of memory
+            Stereo speakers with wider stereo sound
+            Two Thunderbolt 3 (USB-C) ports
+            Up to 11 hours of battery life
+            Force Touch trackpad</p>
+            <a href = "https://amzn.to/34vr29i" class="btn btn-secondary">$999.99</a>
+            <!-- <button type="button" class="btn btn-secondary">$999.99</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://amzn.to/2Xvbwc0"><img class="card-img-top" src="{% static 'electron/images/t4.jpg' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://amzn.to/2Xvbwc0">Samsung Chromebook XE303C12-A01 11.6-inch, Exynos 5250, 2GB RAM, 16GB SSD, Silver (Renewed)</a>
+            </h4>
+            <p class="card-text">Chrome OS, Samsung Exynos 5250 Dual Core Processor
+            Display: 11. 6" LED HD 1366 x 768 16: 9, Ports: HDMI, Headphone/MIC combo, 1 x USB 3. 0 + 1 x USB 2. 0, 3- in-1 (SD/SDHC/SDXC)
+            Memory: 2 GB DDR3L RAM, 16GB Solid State Drive
+            Built-in dual band Wi-Fi 802. 11 a/b/g/n, Webcam, 3W Stereo Speaker</p>
+            <a href = "https://amzn.to/2Xvbwc0" class="btn btn-secondary">$125.29</a>
+            <!-- <button type="button" class="btn btn-secondary">$125.29</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://amzn.to/3chSyKl"><img class="card-img-top" src="{% static 'electron/images/t5.jpg' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://amzn.to/3chSyKl">ASUS VivoBook 15 Thin and Light Laptop, 15.6” FHD, Intel Core i3-8145U CPU, 8GB RAM, 128GB SSD, Windows 10 in S Mode, F512FA-AB34, Slate Gray</a>
+            </h4>
+            <p class="card-text">15.6 inch full HD 4 way NanoEdge bezel display with stunning 88% screen-to-body ratio
+            Intel core i3-8145U processor (4M Cache, upto 3.9 GHz)
+            8GB RAM and 128GB M.2 SSD; Windows 10 in S mode (switchable to windows 10 home)
+            <!-- Ergonomic backlit chiclet keyboard with fingerprint sensor activated via Windows hello
+            Exclusive Ergolift design for an improved typing position
+            Comprehensive connections including USB 3.1 Type-C , USB 3.1 Type-A, USB 2.0, and HDMI; Gigabit Wi-Fi 5 (802.11ac) (USB transfer speed may vary. Learn more at ASUS website) --></p>
+            <a href = "https://amzn.to/3chSyKl" class="btn btn-secondary">$429.99</a>
+            <!-- <button type="button" class="btn btn-secondary">$429.99</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="https://amzn.to/34t99bn"><img class="card-img-top" src="{% static 'electron/images/t6.jpg' %}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="https://amzn.to/34t99bn">HP 2019 14" Laptop - Intel Core i3 - 8GB Memory - 128GB Solid State Drive - Ash Silver Keyboard Frame (14-CF0014DX),8GB | 128GB SSD | Intel i3-7100U</a>
+            </h4>
+            <p class="card-text">Windows 10 operating system Windows 10 brings back the start menu from Windows 7 and introduces new features, like the edge web browser that lets you markup web pages on your screen
+            14" Display bright View glossy screen maintains the vivid colors in your photos and videos. Typical 1366 x 768 HD resolution. <!-- Wled backlight
+            7th Gen Intel Core i3-7100U mobile Processor smart dual-core, four-way processing performance for HD-quality computing
+            8GB system Memory for advanced multitasking substantial high-bandwidth RAM
+            128GB Solid State Drive (SSD) while offering less storage space than a hard drive, a flash-based SSD has no moving parts, resulting in faster start-up times --></p>
+            <a href = "https://amzn.to/34t99bn" class="btn btn-secondary">$389.00</a>
+            <!-- <button type="button" class="btn btn-secondary">$389.00</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  <br/>
+  <hr>
+  <br/><br/>
+  
+
+<!--     <div class="row mb-4">
+      <div class="col-md-8">
+        <div class="jumbotron center">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Features Section -->
+    <div class="row">
+      <div class="col-lg-6">
+       <script type="text/javascript">
+        amzn_assoc_placement = "adunit0";
+        amzn_assoc_search_bar = "true";
+        amzn_assoc_tracking_id = "sameerakavint-20";
+        amzn_assoc_search_bar_position = "bottom";
+        amzn_assoc_ad_mode = "search";
+        amzn_assoc_ad_type = "smart";
+        amzn_assoc_marketplace = "amazon";
+        amzn_assoc_region = "US";
+        amzn_assoc_title = "Shop Related Products";
+        amzn_assoc_default_search_phrase = "computer accessories";
+        amzn_assoc_default_category = "All";
+        amzn_assoc_linkid = "d5c3bee8c70307698de08a20f6e6c65b";
+        </script>
+        <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+      </div>
+      <div class="col-lg-6">
+        <script type="text/javascript">
+        amzn_assoc_placement = "adunit0";
+        amzn_assoc_search_bar = "true";
+        amzn_assoc_tracking_id = "sameerakavint-20";
+        amzn_assoc_search_bar_position = "bottom";
+        amzn_assoc_ad_mode = "search";
+        amzn_assoc_ad_type = "smart";
+        amzn_assoc_marketplace = "amazon";
+        amzn_assoc_region = "US";
+        amzn_assoc_title = "Shop Related Products";
+        amzn_assoc_default_search_phrase = "laptops";
+        amzn_assoc_default_category = "All";
+        amzn_assoc_linkid = "d5c3bee8c70307698de08a20f6e6c65b";
+        </script>
+        <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+      </div>
+    </div>
+    <!-- /.row -->
+<br/>
+    <hr>
+<br/>
+
+
+    <!-- Call to Action Section -->
+    <div class="row mb-4">
+      <div class="col-md-8">
+        <p align="center"> We give you the best laptops & Accessories to fulfill your requirement  from Amazon.com</p>
+      </div>
+      <div class="col-md-4">
+        <a class="btn btn-lg btn-secondary btn-block" href="https://www.amazon.com/s?k=laptop&i=computers&camp=1789&creative=9325&linkCode=ur2&linkId=f07fddfaac08c0ae761ab75c35ab88df&tag=sameerakavint-20">Shop Electronics on Amazon</a>
+      </div>
+    </div>
+
+  </div>
+  <br/>
+  <br/>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'electron/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'electron/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>
